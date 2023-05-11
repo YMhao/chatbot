@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="browsermode" content="application" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ONES ChatAI Ops</title>
+
+  <link href="libs/bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="libs/bootstrap-icons-1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body onload="initPin();initSumary();">
+
+  <header data-bs-theme="dark">
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <strong>🐱ONES AIOps ChatBot</strong>
+        </a>
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <strong id="pin"></strong>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+<main>
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">ONES AIOps ChatBot MVP</h1>
+        <p id="summary" class="lead text-body-secondary"></p>
+        <div id="controls">
+          <!-- <div id="container-classic" class="container">
+            <div class="iphone-display">
+              <div class="subcontainer" id="container-classic-canvas"></div>
+            </div>
+          </div> -->
+          <div id="container-ios9" class="container d-flex align-items-center mx-auto">
+            <div class="iphone-display d-flex align-items-center mx-auto">
+              <div class="subcontainer d-flex align-items-center mx-auto" id="container-ios9-canvas"></div>
+            </div>
+          </div>
+          <button id="recordButton" class="btn btn-primary btn-circle my-2">
+            <i class="bi bi-mic"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <div id="formats">Format: start recording to see sample rate</div>
+  <p><strong>Recordings:</strong></p>
+  <ol id="recordingsList"></ol> -->
+  <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+  <script src="js/siriwave.js"></script>
+  <script src="js/recorder.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pin.js"></script>
+  <script src="js/lang.js"></script>
+
+</main> 
+  <script src="libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="libs/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
