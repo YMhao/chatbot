@@ -4,6 +4,7 @@
 # scp -r -P 28292 screen.tar.gz root@ali.yuminghao.top:/data/ones-rocket/chatAIOps-web/
 # ssh -p 28292 root@ali.yuminghao.top "cd /data/ones-rocket/chatAIOps-web/ && tar -xzf chatbot.tar.gz"
 # ssh -p 28292 root@ali.yuminghao.top "cd /data/ones-rocket/chatAIOps-web/ && tar -xzf screen.tar.gz"
+# rm -rf chatbot.tar.gz screen.tar.gz
 
 src="screen"
 scp -r -P 28292 ${src}/css/*  root@ali.yuminghao.top:/data/ones-rocket/chatAIOps-web/${src}/css/
