@@ -1,0 +1,17 @@
+{
+    "en": {
+        "title": "Welcome to My Application",
+        "greeting": "Hello {user}!",
+        "button": "Submit"
+    },
+    "zh-CN": {
+        "title": "欢迎使用我的应用程序",
+        "greeting": "你好 {user}！",
+        "button": "提交"
+    },
+    "fr": {
+        "title": "Bienvenue sur mon application",
+        "greeting": "Bonjour {user}！",
+        "button": "Envoyer"
+    }
+}
