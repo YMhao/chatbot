@@ -1,3 +1,9 @@
 .terminal-container {
   font-family: monospace;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 16px;
+  border-radius: 5px;
 }

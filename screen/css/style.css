@@ -3,3 +3,13 @@
   max-height: 100vh;
   overflow: auto;
 }
+
+
+.bg-dark-blue {
+  background-color: #272727;
+}
+
+
+.hidden-scroll-bar {
+  overflow: hidden;  /* 隐藏滚动条 */
+}

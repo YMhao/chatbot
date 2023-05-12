@@ -16,100 +16,84 @@
 <body>
     <div class="container-fluid">
         <div class="row fix-full-screen">
-            <div class="col-6 bg-dark text-white">
-                <div class="chat-history fix-full-screen">
-                    <div class="message other-message">
-                        <div class="avatar"><img src="https://i.pravatar.cc/40?img=3" alt=""></div>
-                        <div class="message-text">Hello, how are you?</div>
+            <div class="col-6 bg-dark-blue text-white">
+                <div class="chat">
+                    <div class="chat-head">
+                        <div class="chat-title">ONESChat</div>
+                        <i class="chat-icon fas fa-times"></i>
                     </div>
-                    <div class="message my-message">
-                        <div class="message-text">I'm fine, thank you. How about you?</div>
-                        <div class="avatar"><img src="https://i.pravatar.cc/40?img=6" alt=""></div>
+                    <div class="chat-history">
+                        <div class="message other-message">
+                            <div class="avatar"><img src="images/chatbot.png" alt=""></div>
+                            <div class="message-text">Hello, 小蓝，帮我看看Node节点的状态。</div>
+                        </div>
+                        <div class="message my-message">
+                            <div class="message-text">好的，所有节点状态正常。</div>
+                            <div class="avatar"><img src="images/me.png" alt=""></div>
+                        </div>
+                        <div class="message my-message">
+                            <div class="message-text">为什么有个节点的状态是SchedulingDisabled</div>
+                            <div class="avatar"><img src="images/me.png" alt=""></div>
+                        </div>
+                        <div class="message other-message">
+                            <div class="avatar"><img src="images/chatbot.png" alt=""></div>
+                            <div class="message-text">在 Kubernetes
+                                中，节点的状态被分为几个阶段，包括Ready、SchedulingDisabled、OutOfDisk、NotReady 等。节点的状态 SchedulingDisabled
+                                表明 Kubernetes 集群管理员已经禁止了该节点上的 Pod 调度。可能是管理员手动设置了该节点的调度状态，或者该节点出现了故障无法调度
+                                Pod。这种情况通常需要管理员手动解决。</div>
+                        </div>
+                        <div class="message my-message">
+                            <div class="message-text">好的，谢谢</div>
+                            <div class="avatar"><img src="images/me.png" alt=""></div>
+                        </div>
+                        <div class="message my-message">
+                            <div class="message-text">可以帮我，把这个节点的调度重新打开吗</div>
+                            <div class="avatar"><img src="images/me.png" alt=""></div>
+                        </div>
+                        <div class="message other-message">
+                            <div class="avatar"><img src="images/chatbot.png" alt=""></div>
+                            <div class="message-text">好的，已执行，你可以看看右边的执行结果</div>
+                        </div>
+                        <div class="message other-message">
+                            <div class="avatar"><img src="images/chatbot.png" alt=""></div>
+                            <div class="message-text">Hello, 小蓝，帮我看看Node节点的状态。</div>
+                        </div>
+                        <div class="message my-message">
+                            <div class="message-text">好的，所有节点状态正常。</div>
+                            <div class="avatar"><img src="images/me.png" alt=""></div>
+                        </div>
+                        <div class="message my-message">
+                            <div class="message-text">为什么有个节点的状态是SchedulingDisabled</div>
+                            <div class="avatar"><img src="images/me.png" alt=""></div>
+                        </div>
+                        <div class="message other-message">
+                            <div class="avatar"><img src="images/chatbot.png" alt=""></div>
+                            <div class="message-text">在 Kubernetes
+                                中，节点的状态被分为几个阶段，包括Ready、SchedulingDisabled、OutOfDisk、NotReady 等。节点的状态 SchedulingDisabled
+                                表明 Kubernetes 集群管理员已经禁止了该节点上的 Pod 调度。可能是管理员手动设置了该节点的调度状态，或者该节点出现了故障无法调度
+                                Pod。这种情况通常需要管理员手动解决。</div>
+                        </div>
+                        <div class="message my-message">
+                            <div class="message-text">好的，谢谢</div>
+                            <div class="avatar"><img src="images/me.png" alt=""></div>
+                        </div>
+                        <div class="message my-message">
+                            <div class="message-text">可以帮我，把这个节点的调度重新打开吗</div>
+                            <div class="avatar"><img src="images/me.png" alt=""></div>
+                        </div>
+                        <div class="message other-message">
+                            <div class="avatar"><img src="images/chatbot.png" alt=""></div>
+                            <div class="message-text">好的，已执行，你可以看看右边的执行结果</div>
+                        </div>
                     </div>
-                    <div class="message other-message">
-                        <div class="avatar"><img src="https://i.pravatar.cc/40?img=4" alt=""></div>
-                        <div class="message-text">I'm good too. What are you doing these days?</div>
-                    </div>
-                    <div class="message my-message">
-                        <div class="message-text">Just working on some projects. How about you?</div>
-                        <div class="avatar"><img src="https://i.pravatar.cc/40?img=6" alt=""></div>
-                    </div>
-                    <div class="message other-message">
-                        <div class="avatar"><img src="https://i.pravatar.cc/40?img=5" alt=""></div>
-                        <div class="message-text">I'm also working on some interesting projects. We should collaborate
-                            sometime.'m also working on some interesting projects. We should collaborate sometime.'m
-                            also working on some interesting projects. We should collaborate sometime.'m also working on
-                            some interesting projects. We should collaborate sometime.'m also working on some
-                            interesting projects. We should collaborate sometime.'m also working on some interesting
-                            projects. We should collaborate sometime.'m also working on some interesting projects. We
-                            should collaborate sometime.'m also working on some interesting projects. We should
-                            collaborate sometime.'m also working on some interesting projects. We should collaborate
-                            sometime.</div>
-                    </div>
-                    <div class="message other-message">
-                        <div class="avatar"><img src="https://i.pravatar.cc/40?img=5" alt=""></div>
-                        <div class="message-text">I'm also working on some interesting projects. We should collaborate
-                            sometime.'m also working on some interesting projects. We should collaborate sometime.'m
-                            also working on some interesting projects. We should collaborate sometime.'m also working on
-                            some interesting projects. We should collaborate sometime.'m also working on some
-                            interesting projects. We should collaborate sometime.'m also working on some interesting
-                            projects. We should collaborate sometime.'m also working on some interesting projects. We
-                            should collaborate sometime.'m also working on some interesting projects. We should
-                            collaborate sometime.'m also working on some interesting projects. We should collaborate
-                            sometime.</div>
-                    </div>
-                    <div class="message other-message">
-                        <div class="avatar"><img src="https://i.pravatar.cc/40?img=5" alt=""></div>
-                        <div class="message-text">I'm also working on some interesting projects. We should collaborate
-                            sometime.'m also working on some interesting projects. We should collaborate sometime.'m
-                            also working on some interesting projects. We should collaborate sometime.'m also working on
-                            some interesting projects. We should collaborate sometime.'m also working on some
-                            interesting projects. We should collaborate sometime.'m also working on some interesting
-                            projects. We should collaborate sometime.'m also working on some interesting projects. We
-                            should collaborate sometime.'m also working on some interesting projects. We should
-                            collaborate sometime.'m also working on some interesting projects. We should collaborate
-                            sometime.</div>
-                    </div>
-                    <div class="message other-message">
-                        <div class="avatar"><img src="https://i.pravatar.cc/40?img=5" alt=""></div>
-                        <div class="message-text">I'm also working on some interesting projects. We should collaborate
-                            sometime.'m also working on some interesting projects. We should collaborate sometime.'m
-                            also working on some interesting projects. We should collaborate sometime.'m also working on
-                            some interesting projects. We should collaborate sometime.'m also working on some
-                            interesting projects. We should collaborate sometime.'m also working on some interesting
-                            projects. We should collaborate sometime.'m also working on some interesting projects. We
-                            should collaborate sometime.'m also working on some interesting projects. We should
-                            collaborate sometime.'m also working on some interesting projects. We should collaborate
-                            sometime.</div>
-                    </div>
-                    <div class="message other-message">
-                        <div class="avatar"><img src="https://i.pravatar.cc/40?img=5" alt=""></div>
-                        <div class="message-text">I'm also working on some interesting projects. We should collaborate
-                            sometime.'m also working on some interesting projects. We should collaborate sometime.'m
-                            also working on some interesting projects. We should collaborate sometime.'m also working on
-                            some interesting projects. We should collaborate sometime.'m also working on some
-                            interesting projects. We should collaborate sometime.'m also working on some interesting
-                            projects. We should collaborate sometime.'m also working on some interesting projects. We
-                            should collaborate sometime.'m also working on some interesting projects. We should
-                            collaborate sometime.'m also working on some interesting projects. We should collaborate
-                            sometime.</div>
-                    </div>
-                    <div class="message other-message">
-                        <div class="avatar"><img src="https://i.pravatar.cc/40?img=5" alt=""></div>
-                        <div class="message-text">I'm also working on some interesting projects. We should collaborate
-                            sometime.'m also working on some interesting projects. We should collaborate sometime.'m
-                            also working on some interesting projects. We should collaborate sometime.'m also working on
-                            some interesting projects. We should collaborate sometime.'m also working on some
-                            interesting projects. We should collaborate sometime.'m also working on some interesting
-                            projects. We should collaborate sometime.'m also working on some interesting projects. We
-                            should collaborate sometime.'m also working on some interesting projects. We should
-                            collaborate sometime.'m also working on some interesting projects. We should collaborate
-                            sometime.</div>
+                    <div class="chat-foot">
+                        <input class="chat-input" placeholder="Type your message here..."></textarea>
+                        <button class="chat-send-btn"><i class="fas fa-paper-plane"></i>Send</button>
                     </div>
                 </div>
             </div>
-            <div class="col-6 bg-light">
-                <div id="output" class="fix-full-screen bg-light"></div>
+            <div class="col-6 bg-black">
+                <div id="output" class="terminal-container fix-full-screen"></div>
             </div>
         </div>
     </div>
