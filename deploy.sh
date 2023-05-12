@@ -7,7 +7,7 @@
 # rm -rf chatbot.tar.gz screen.tar.gz
 
 src="screen"
-scp -r -P 28292 ${src}/images  root@ali.yuminghao.top:/data/ones-rocket/chatAIOps-web/${src}/
-scp -r -P 28292 ${src}/css  root@ali.yuminghao.top:/data/ones-rocket/chatAIOps-web/${src}/
-scp -r -P 28292 ${src}/js  root@ali.yuminghao.top:/data/ones-rocket/chatAIOps-web/${src}/
-scp -r -P 28292 ${src}/index.html root@ali.yuminghao.top:/data/ones-rocket/chatAIOps-web/${src}/
+scp -r -P 22 ${src}/images  root@screen.yuminghao.top:/data/ones-rocket/chatAIOps-web/${src}/
+scp -r -P 22 ${src}/css  root@screen.yuminghao.top:/data/ones-rocket/chatAIOps-web/${src}/
+scp -r -P 22 ${src}/js  root@screen.yuminghao.top:/data/ones-rocket/chatAIOps-web/${src}/
+scp -r -P 22 ${src}/index.html root@screen.yuminghao.top:/data/ones-rocket/chatAIOps-web/${src}/

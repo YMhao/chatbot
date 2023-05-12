@@ -116,10 +116,12 @@ function touchendStopRecording() {
 }
 
 function playWAV(blob) {
-	var url = URL.createObjectURL(blob);
-	var au = document.createElement('audio');
-	au.src = url;
-	au.play()
+	const pin = getPIN()
+	uploadAudio(blob, pin);
+	// var url = URL.createObjectURL(blob);
+	// var au = document.createElement('audio');
+	// au.src = url;
+	// au.play()
 }
 
 function createDownloadLink(blob) {
@@ -191,4 +193,25 @@ function startSW() {
 
 function stopSW() {
 	SW9.setAmplitude(0.002);
+}
+
+// upload
+function uploadAudio(buffer, pincode) {
+
+	const file = new Blob([buffer], { type: 'application/octet-stream' }); // 将 Uint8Array 转换为 Blob
+
+	const formData = new FormData();
+	formData.append('file', file, 'audio.wav'); // 将 Blob 添加到 FormData
+	formData.append('pincode', pincode); // 可以同时上传其他表单参数
+	
+	const xhr = new XMLHttpRequest();
+	xhr.open('POST', '/api/audio', true);
+	xhr.onload = function() {
+		if (this.status === 200) {
+			console.log('上传成功！');
+		} else {
+			console.log('上传失败。');
+		}
+	};
+	xhr.send(formData);
 }

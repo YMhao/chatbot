@@ -11,79 +11,29 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/terminal.css">
     <link rel="stylesheet" type="text/css" href="css/chat.css">
+    <link rel="stylesheet" type="text/css" href="css/pin.css">
 </head>
 
 <body>
+    <div class="mask-layer">
+        <div class="mask-content">
+          <input class="input-box" type="text" placeholder="请输入6位PIN码">
+          <button class="confirm-btn">确认</button>
+        </div>
+    </div>
     <div class="container-fluid">
         <div class="row fix-full-screen">
             <div class="col-6 bg-dark-blue text-white">
                 <div class="chat">
                     <div class="chat-head">
+                        <img src="images/logo.png" class="logo" alt="">
                         <div class="chat-title">ONESChat</div>
-                        <i class="chat-icon fas fa-times"></i>
+                        <div id="pin" class="pin-title"></div>
                     </div>
-                    <div class="chat-history">
+                    <div id="chat-body" class="chat-history">
                         <div class="message other-message">
                             <div class="avatar"><img src="images/chatbot.png" alt=""></div>
-                            <div class="message-text">Hello, 小蓝，帮我看看Node节点的状态。</div>
-                        </div>
-                        <div class="message my-message">
-                            <div class="message-text">好的，所有节点状态正常。</div>
-                            <div class="avatar"><img src="images/me.png" alt=""></div>
-                        </div>
-                        <div class="message my-message">
-                            <div class="message-text">为什么有个节点的状态是SchedulingDisabled</div>
-                            <div class="avatar"><img src="images/me.png" alt=""></div>
-                        </div>
-                        <div class="message other-message">
-                            <div class="avatar"><img src="images/chatbot.png" alt=""></div>
-                            <div class="message-text">在 Kubernetes
-                                中，节点的状态被分为几个阶段，包括Ready、SchedulingDisabled、OutOfDisk、NotReady 等。节点的状态 SchedulingDisabled
-                                表明 Kubernetes 集群管理员已经禁止了该节点上的 Pod 调度。可能是管理员手动设置了该节点的调度状态，或者该节点出现了故障无法调度
-                                Pod。这种情况通常需要管理员手动解决。</div>
-                        </div>
-                        <div class="message my-message">
-                            <div class="message-text">好的，谢谢</div>
-                            <div class="avatar"><img src="images/me.png" alt=""></div>
-                        </div>
-                        <div class="message my-message">
-                            <div class="message-text">可以帮我，把这个节点的调度重新打开吗</div>
-                            <div class="avatar"><img src="images/me.png" alt=""></div>
-                        </div>
-                        <div class="message other-message">
-                            <div class="avatar"><img src="images/chatbot.png" alt=""></div>
-                            <div class="message-text">好的，已执行，你可以看看右边的执行结果</div>
-                        </div>
-                        <div class="message other-message">
-                            <div class="avatar"><img src="images/chatbot.png" alt=""></div>
-                            <div class="message-text">Hello, 小蓝，帮我看看Node节点的状态。</div>
-                        </div>
-                        <div class="message my-message">
-                            <div class="message-text">好的，所有节点状态正常。</div>
-                            <div class="avatar"><img src="images/me.png" alt=""></div>
-                        </div>
-                        <div class="message my-message">
-                            <div class="message-text">为什么有个节点的状态是SchedulingDisabled</div>
-                            <div class="avatar"><img src="images/me.png" alt=""></div>
-                        </div>
-                        <div class="message other-message">
-                            <div class="avatar"><img src="images/chatbot.png" alt=""></div>
-                            <div class="message-text">在 Kubernetes
-                                中，节点的状态被分为几个阶段，包括Ready、SchedulingDisabled、OutOfDisk、NotReady 等。节点的状态 SchedulingDisabled
-                                表明 Kubernetes 集群管理员已经禁止了该节点上的 Pod 调度。可能是管理员手动设置了该节点的调度状态，或者该节点出现了故障无法调度
-                                Pod。这种情况通常需要管理员手动解决。</div>
-                        </div>
-                        <div class="message my-message">
-                            <div class="message-text">好的，谢谢</div>
-                            <div class="avatar"><img src="images/me.png" alt=""></div>
-                        </div>
-                        <div class="message my-message">
-                            <div class="message-text">可以帮我，把这个节点的调度重新打开吗</div>
-                            <div class="avatar"><img src="images/me.png" alt=""></div>
-                        </div>
-                        <div class="message other-message">
-                            <div class="avatar"><img src="images/chatbot.png" alt=""></div>
-                            <div class="message-text">好的，已执行，你可以看看右边的执行结果</div>
+                            <div class="message-text">欢迎回来！使用AIops小蓝助手，让我们一起轻松应对复杂的运维场景吧！在您的工作中，我将始终为您提供专业支持，帮助您在实时监测、故障排查、性能优化等方面取得更出色的业绩。不管是工作中的挑战，还是对AIops的探索，我都有信心在您身边成为最忠实的小伙伴！</div>
                         </div>
                     </div>
                     <div class="chat-foot">
@@ -98,8 +48,8 @@
         </div>
     </div>
 
-
-    <script src="js/terminal.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/pin.js"></script>
     <script src="libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="libs/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
 </body>
