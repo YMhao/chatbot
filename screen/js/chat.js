@@ -145,8 +145,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // 输入PIN码必须是6位数，符合要求则将PIN码写入localstorage
         localStorage.setItem("PIN", inputVal);
         // 隐藏遮罩层
+        setTimeout(function() {
+          console.log('经过了3秒。');
+        }, 3000);
         displayPin();
-        initWebSocket();
+        location.reload();
         maskLayer.style.display = "none";
       } else {
         // 如果PIN码为空或者不是6位数，则提示用户重新输入
